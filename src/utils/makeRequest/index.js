@@ -12,7 +12,6 @@ const makeRequest = async (apiEndPoint, dynamicConfig, navigate) => {
         authorization: `Bearer ${localStorage.getItem('token')}`,
       },
     };
-
     const { data } = await axios(requestDetails);
     return data;
   } catch (error) {
