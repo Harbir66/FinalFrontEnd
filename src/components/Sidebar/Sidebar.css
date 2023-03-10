@@ -1,0 +1,84 @@
+.sidebar{
+    width: 20vw;
+    height: 100%;
+    background: #272727;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    z-index: 100;
+}
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 7vh;
+    background: #5405c4;
+    color: #fff;
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.sidebar-search{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 7vh;
+    color: #A1A1A1;
+    font-weight: 600;
+    font-size: 2vh;
+}
+.sidebar-search > img{
+    height: 4vh;
+}
+
+.sidebar>nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 40vh;
+    color: #A1A1A1;
+    font-weight: 600;
+    font-size: 2vh;
+}
+.sidebar>nav>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    height: 40vh;
+    width: 80%;
+    gap: 2rem;
+    overflow-y: scroll;
+    list-style-type: disc;
+}
+.sidebar>nav>ul>li{
+    text-align: start;
+    height: 3vh;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebar>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4vh;
+    background: inherit;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2vh;
+    border: none;
+    cursor: pointer;
+}
+
+.navlink{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2vh;
+    width: 100%;
+}
