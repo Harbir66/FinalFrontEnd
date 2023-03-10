@@ -2,20 +2,12 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import {
-  HOME_ROUTE,
   ERROR_ROUTE,
   REGISTER_ROUTE,
   LOGIN_ROUTE,
   CONTENT_TYPES,
 } from './constants/routes';
-import {
-  Home,
-  Error,
-  PageNotFound,
-  Register,
-  Login,
-  ContentTypes,
-} from './pages';
+import { Error, PageNotFound, Register, Login, ContentTypes } from './pages';
 import ProtectedRoutes from './utils/ProtectedRoute';
 
 function App() {
