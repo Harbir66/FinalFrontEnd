@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Page should render correctly with status code 1`] = `
+<DocumentFragment>
+  <div
+    class="main"
+  >
+    <div
+      class="sidebar"
+    >
+      <div
+        class="sidebar-header"
+      >
+        CMS+
+      </div>
+      <div
+        class="sidebar-search"
+      >
+        <span>
+          COLLECTION TYPES
+        </span>
+        <img
+          alt="searchIcon"
+          src="icon-search-dark@3x.png"
+        />
+      </div>
+      <nav>
+        <ul />
+      </nav>
+      <button
+        style="background: black;"
+        type="button"
+      >
+        CONTENT TYPE BUILDER
+      </button>
+    </div>
+    <div
+      class="errorContainer"
+    >
+      <header
+        class="header"
+      >
+        Error
+      </header>
+      <div
+        class="content"
+      >
+        <p>
+          Something went wrong!
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Error Page should render correctly withour status code 1`] = `
+<DocumentFragment>
+  <div
+    class="main"
+  >
+    <div
+      class="sidebar"
+    >
+      <div
+        class="sidebar-header"
+      >
+        CMS+
+      </div>
+      <div
+        class="sidebar-search"
+      >
+        <span>
+          COLLECTION TYPES
+        </span>
+        <img
+          alt="searchIcon"
+          src="icon-search-dark@3x.png"
+        />
+      </div>
+      <nav>
+        <ul />
+      </nav>
+      <button
+        style="background: black;"
+        type="button"
+      >
+        CONTENT TYPE BUILDER
+      </button>
+    </div>
+    <div
+      class="errorContainer"
+    >
+      <header
+        class="header"
+      >
+        Error
+      </header>
+      <div
+        class="content"
+      >
+        <p>
+          Something went wrong!
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

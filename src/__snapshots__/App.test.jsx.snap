@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="main"
+    >
+      <div
+        class="sidebar"
+      >
+        <div
+          class="sidebar-header"
+        >
+          CMS+
+        </div>
+        <div
+          class="sidebar-search"
+        >
+          <span>
+            COLLECTION TYPES
+          </span>
+          <img
+            alt="searchIcon"
+            src="icon-search-dark@3x.png"
+          />
+        </div>
+        <nav>
+          <ul />
+        </nav>
+        <button
+          style="background: black;"
+          type="button"
+        >
+          CONTENT TYPE BUILDER
+        </button>
+      </div>
+      <div
+        class="pageNotFoundContainer"
+      >
+        <header
+          class="header"
+        >
+          Page Not Found
+        </header>
+        <div
+          class="content"
+        >
+          <p>
+            404 Error. Page not found
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

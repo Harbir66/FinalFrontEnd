@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayButton should render correctly when not selected  1`] = `
+<DocumentFragment>
+  <button
+    class="display-button"
+    type="button"
+  >
+    <span />
+    <span>
+      10
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`DisplayButton should render correctly when selected  1`] = `
+<DocumentFragment>
+  <button
+    class="display-button selected"
+    type="button"
+  >
+    <span />
+    <span>
+      10
+    </span>
+  </button>
+</DocumentFragment>
+`;

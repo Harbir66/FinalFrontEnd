@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DottedButton should render correctly with large attribute  1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="dotted-button larger"
+      type="button"
+    >
+      test
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DottedButton should render correctly without large attribute  1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      class="dotted-button"
+      type="button"
+    >
+      test
+    </button>
+  </div>
+</DocumentFragment>
+`;

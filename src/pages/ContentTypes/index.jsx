@@ -15,11 +15,13 @@ import {
 import makeRequest from '../../utils/makeRequest';
 import {
   CREATE_NEW_COLLECTION,
+  CREATE_NEW_ENTRY,
   CREATE_NEW_FIELD,
   DELETE_FIELD,
   GET_ALL_DATA,
   GET_ALL_ENTRIES,
   UPDATE_FIELD,
+  DELETE_ENTRY,
 } from '../../constants/apiEndPoints';
 import { getCollectionNamesFromData } from '../../utils/common';
 import editIcon from '../../assets/user-pencil-write-ui-education@3x.png';
@@ -33,16 +35,35 @@ function ContentTypes() {
   const [isOpen, setIsOpen] = React.useState(false);
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
-  const [formInput, setFormInput] = React.useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormInput('');
-    closeModal();
-  };
-
-  //   const [error, setError] = React.useState(null);
   const navigate = useNavigate();
+  const [formInput, setFormInput] = React.useState({});
+
+  const handleInputChanges = (e) => {
+    setFormInput((prevState) => {
+      return { ...prevState, [e.target.name]: e.target.value };
+    });
+  };
+  const handleAdd = async () => {
+    const response = await makeRequest(
+      CREATE_NEW_ENTRY(selectedCollectionId),
+      {
+        data: {
+          fields: Object.keys(formInput),
+          values: Object.values(formInput),
+        },
+      },
+      navigate
+    );
+    if (response) {
+      const getData = await makeRequest(
+        GET_ALL_ENTRIES(selectedCollectionId),
+        {},
+        navigate
+      );
+      setEntries(getData.data.values);
+      closeModal();
+    }
+  };
 
   React.useEffect(() => {
     makeRequest(GET_ALL_DATA, {}, navigate).then((data) => {
@@ -50,11 +71,7 @@ function ContentTypes() {
       setSelectedContentId(data[0].id);
       setSelectedCollectionId(data[0].id);
     });
-    // .catch((err) => {
-    //   console.log(err);
-    // });
   }, []);
-  // console.log(allData);
 
   const handleViewChange = (newView) => {
     setView(newView);
@@ -185,26 +202,47 @@ function ContentTypes() {
 
   const modalForm = (
     <ModalForm isOpen={isOpen} onClose={closeModal}>
-      <h1>Rename the Field</h1>
-      <form>
-        <label htmlFor="name">
-          New name of the Field
+      {selectedCollectionAllFields.map((field) => (
+        <div key={field} className="form-group">
+          <label htmlFor={field}>{field}</label>
           <input
             type="text"
-            id="name"
-            value={formInput}
-            onChange={(e) => setFormInput(e.target.value)}
+            name={field}
+            id={field}
+            // value={formInput[field]}
+            onChange={handleInputChanges}
           />
-        </label>
-        <button type="button" onClick={closeModal}>
-          Cancel
-        </button>
-        <button onClick={handleSubmit} type="submit">
-          Create
-        </button>
-      </form>
+        </div>
+      ))}
+      <button type="button" onClick={closeModal}>
+        cancel
+      </button>
+      <button onClick={handleAdd} type="button">
+        submit
+      </button>
     </ModalForm>
   );
+
+  const handleDeleteEntries = async (index) => {
+    try {
+      const response = await makeRequest(
+        DELETE_ENTRY(selectedCollectionId),
+        { data: { index } },
+        navigate
+      );
+      if (response) {
+        const getData = await makeRequest(
+          GET_ALL_ENTRIES(selectedCollectionId),
+          {},
+          navigate
+        );
+        setEntries(getData.data.values);
+      }
+    } catch (err) {
+      //
+    }
+  };
+
   return (
     <div className="content-type">
       <Sidebar
@@ -284,6 +322,10 @@ function ContentTypes() {
                   index={index}
                   entry={entry}
                   fields={selectedCollectionAllFields}
+                  handleDeleteEntries={handleDeleteEntries}
+                  selectedCollectionId={selectedCollectionId}
+                  setEntries={setEntries}
+                  selectedCollectionAllFields={selectedCollectionAllFields}
                 />
               ))}
             </div>

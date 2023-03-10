@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldEntry should render 1`] = `
+<DocumentFragment>
+  <div
+    class="field-entry"
+  >
+    <div
+      class="first-portion"
+    >
+      <span
+        class="tab"
+      >
+        Ab
+      </span>
+      <span
+        class="field-name"
+      >
+        test
+      </span>
+      <span
+        class="field-type"
+      >
+        Text
+      </span>
+    </div>
+    <div
+      class="field-buttons"
+    >
+      <button
+        type="button"
+      >
+        <img
+          alt="edit-icon"
+          src="user-edit-text-message-note@3x.png"
+        />
+      </button>
+      <button
+        type="button"
+      >
+        <img
+          alt="delete-icon"
+          src="trash-delete-recycle-bin-bucket-waste@3x.png"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

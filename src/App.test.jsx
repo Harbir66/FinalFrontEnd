@@ -1,8 +1,7 @@
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('App should render correctly', () => {
   const { asFragment } = render(<App />);
-
   expect(asFragment()).toMatchSnapshot();
 });

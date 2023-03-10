@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntriesCount should render correctly with search icon 1`] = `
+<DocumentFragment>
+  <div
+    class="entries-count small"
+  >
+    <span>
+      10 mockType
+    </span>
+    <img
+      alt="searchIcon"
+      class="search-icon"
+      src="icon-search-dark@3x.png"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`EntriesCount should render correctly without search icon 1`] = `
+<DocumentFragment>
+  <div
+    class="entries-count large"
+  >
+    <span>
+      10 mockType
+    </span>
+  </div>
+</DocumentFragment>
+`;

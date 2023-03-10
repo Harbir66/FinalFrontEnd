@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render 1`] = `
+<DocumentFragment>
+  <div
+    class="sidebar"
+  >
+    <div
+      class="sidebar-header"
+    >
+      CMS+
+    </div>
+    <div
+      class="sidebar-search"
+    >
+      <span>
+        COLLECTION TYPES
+      </span>
+      <img
+        alt="searchIcon"
+        src="icon-search-dark@3x.png"
+      />
+    </div>
+    <nav>
+      <ul>
+        <li>
+          collection1
+        </li>
+        <li>
+          collection2
+        </li>
+      </ul>
+    </nav>
+    <button
+      style="background: black;"
+      type="button"
+    >
+      CONTENT TYPE BUILDER
+    </button>
+  </div>
+</DocumentFragment>
+`;

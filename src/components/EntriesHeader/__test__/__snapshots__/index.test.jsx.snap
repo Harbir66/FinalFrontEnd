@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntriesHeader should render 1`] = `
+<DocumentFragment>
+  <div
+    class="main-container"
+  >
+    <div
+      class="column-names"
+    >
+      <div
+        class="item"
+      >
+        id
+      </div>
+      <div
+        class="item"
+      >
+        field1
+      </div>
+      <div
+        class="item"
+      >
+        field2
+      </div>
+      <div
+        class="item"
+      >
+        field3
+      </div>
+    </div>
+    <div
+      class="buttons"
+    >
+      Actions
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentEntries should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="main-entries"
+  >
+    <div
+      class="column-names-entries"
+    >
+      <div
+        class="item-entries"
+      >
+        1
+      </div>
+      <div
+        class="item-entries"
+      />
+      <div
+        class="item-entries"
+      />
+      <div
+        class="item-entries"
+      />
+    </div>
+    <div
+      class="buttons-entries"
+    >
+      <button
+        type="button"
+      >
+        <img
+          alt="edit-icon"
+          src="user-edit-text-message-note@3x.png"
+        />
+      </button>
+      <button
+        type="button"
+      >
+        <img
+          alt="delete-icon"
+          src="trash-delete-recycle-bin-bucket-waste@3x.png"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
