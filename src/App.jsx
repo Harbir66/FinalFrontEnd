@@ -28,14 +28,6 @@ function App() {
           <Route path={`${ERROR_ROUTE}/:errorCode?`} element={<Error />} />
           <Route path="*" element={<PageNotFound />} />
           <Route
-            path={HOME_ROUTE}
-            element={
-              <ProtectedRoutes>
-                <Home />
-              </ProtectedRoutes>
-            }
-          />
-          <Route
             path={`${CONTENT_TYPES}/*`}
             element={
               <ProtectedRoutes>
