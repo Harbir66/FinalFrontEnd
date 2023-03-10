@@ -59,6 +59,7 @@
     height: 3vh;
     width: 100%;
     cursor: pointer;
+    color: #636363;
 }
 
 .sidebar>button{

@@ -4,12 +4,17 @@ import './Sidebar.css';
 import PropTypes from 'prop-types';
 import searchIcon from '../../assets/icon-search-dark@3x.png';
 
-function Sidebar({ collections, handleViewChange }) {
+function Sidebar({ collections, handleViewChange, handleCollectionChange }) {
   const [selectedListItem, setSelectedListItem] = React.useState(null);
   const [builderPage, setBuilderPage] = React.useState(true);
+
   const handleListClick = (e) => {
     setSelectedListItem(e.target.innerText);
     setBuilderPage(false);
+    const { id } = collections.find(
+      (collection) => collection.name === e.target.innerText
+    );
+    handleCollectionChange(id);
     handleViewChange('entries');
   };
   const handleBuildClick = () => {
@@ -59,4 +64,5 @@ export default Sidebar;
 Sidebar.propTypes = {
   collections: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   handleViewChange: PropTypes.func.isRequired,
+  handleCollectionChange: PropTypes.func.isRequired,
 };
