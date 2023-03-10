@@ -29,3 +29,18 @@ export const GET_ALL_ENTRIES = (collectionId) => ({
   url: `entries/${collectionId}`,
   method: 'GET',
 });
+
+export const CREATE_NEW_ENTRY = (collectionId) => ({
+  url: `entries/${collectionId}`,
+  method: 'POST',
+});
+
+export const DELETE_ENTRY = (collectionId) => ({
+  url: `entries/${collectionId}`,
+  method: 'DELETE',
+});
+
+export const UPDATE_ENTRY = (collectionId) => ({
+  url: `entries/${collectionId}`,
+  method: 'PATCH',
+});
