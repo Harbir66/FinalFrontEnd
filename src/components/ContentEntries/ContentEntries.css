@@ -1,0 +1,35 @@
+.main-entries {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.column-names-entries {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-color: white;
+}
+
+.item-entries {
+  width: 6vw;
+  margin: 0;
+}
+
+.buttons-entries {
+  width: 10vw;
+  margin: 0 0 0 1vw;
+}
+
+.buttons-entries > button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 2vh;
+}
