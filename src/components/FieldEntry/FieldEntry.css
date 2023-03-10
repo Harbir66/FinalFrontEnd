@@ -1,0 +1,70 @@
+.field-entry{
+    display:flex;
+    width: 49.9vw;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0 1px 1px  #D4D6E5;
+    border-radius: 1vh;
+    height: 6vh;
+}
+
+.first-portion{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    gap: 1vh 0;
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 6vh;
+    background-color: #7691FF;
+    border-radius: 1vh 0 0 1vh;
+    color: white;
+    font-size: 2vh;
+}
+
+.field-name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    width: 20vw;
+    height: 6vh;
+    background-color: #F4F6FF;
+    color: #4F4F4F;
+    font-size: 2vh;
+}
+
+.field-type{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20vw;
+    height: 6vh;
+    background-color: #F4F6FF;
+    color: #5c5c5c;
+    font-size: 1.5vh;
+}
+
+.field-buttons{
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    justify-content: flex-start;
+    background-color: #F4F6FF;
+    border-radius: 0 1vh 1vh 0;
+}
+
+.field-buttons > button{
+    border: none;
+    background: none;
+    color: #5c5c5c;
+}
+
+.field-buttons > button > img{
+    height: 2vh;
+}
