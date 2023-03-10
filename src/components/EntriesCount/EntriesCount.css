@@ -1,0 +1,22 @@
+.entries-count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 19vw;
+    margin: 5vh 3vw 0;
+    color: #4F5054;
+}
+
+.small{
+    font-size: large;
+}
+
+.small>img{
+    height: 3vh;
+}
+
+.large{
+    margin: 0;
+    font-size: 2.5vh;
+    color: #8A8C93;
+}
