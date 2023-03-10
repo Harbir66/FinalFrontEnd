@@ -1,0 +1,129 @@
+.register{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #EFF1FF;
+}
+
+.register-image-container{
+    padding: 10vh  10vh 20vh 10vh;
+    width: 60vw;
+    height: 70vh;
+    background-color: #EFF1FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-image-container > div{
+    text-align: start;
+    color: #4F4F4F;
+    margin: 0;
+}
+
+.register-image-container > div > h1{
+    align-self: flex-start;
+}
+
+.register-image{
+    align-self: flex-end;
+    width: 80%;
+    background-color: #e7baba;
+    background-color: transparent;
+}
+
+.register-form{
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    width: 40vw;
+    height: 70vh;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.register-form > h1{
+    color: #EFF1FF;
+    margin: 0;
+}
+
+.register-form > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30vw;
+}
+
+.register-form > form > label{
+    text-align: start;
+    color: #707070;
+    margin-bottom: 2px;
+    width: 100%;
+}
+.register-form > form > input{
+    width: 95%;
+    height: 4vh;
+    margin-bottom: 2vh;
+    border: none;
+    border-radius: 5px;
+    padding: 0 1vw;
+}
+
+.register-form > form > button{
+    width: 50%;
+    height: 4vh;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(70deg, #9A6EFF 0%, #643EFF 100%);
+    color: #EFF1FF;
+    font-weight: bold;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+.register-button > button{
+    background: none;
+    border: none;
+    color: #707070;
+    font-weight: bold;
+    font-size: smaller;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .register-image-container{
+        width: 50vw;
+        padding: 10vh 0 0 0;
+    }
+    .register-image{
+        width: 100%;
+    }
+    .register-form{
+        width: 50vw;
+    }
+}
+    
+@media screen and (max-width: 525px) {
+    .register{
+        flex-direction: column;
+    }
+    .register-image-container{
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+    }
+    .register-form{
+        width: 100vw;
+        height: 50vh;
+    }
+}
+    
