@@ -1,0 +1,26 @@
+.main-container {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.column-names {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.item {
+  width: 6vw;
+  margin: 0;
+}
+
+.buttons {
+  width: 10vw;
+  margin: 0 0 0 1vw;
+}
